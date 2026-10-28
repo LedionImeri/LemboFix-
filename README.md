@@ -1,4 +1,3 @@
-# LemboFix-
 # LemboFix 🔧
 
 **Find trusted professionals for any job.**
@@ -82,7 +81,12 @@ Pages handle their own form posts (Post/Redirect/Get). Business logic lives in `
 ## 🚀 Installation (XAMPP)
 
 1. **Install XAMPP** (PHP 8.1+) and start **Apache** and **MySQL** in the XAMPP Control Panel.
-2. **Copy the project** into `htdocs`, e.g. `C:\xampp\htdocs\lembofix`.
+2. **Get the code** into `htdocs` as a folder named `lembofix`:
+   ```bash
+   cd C:\xampp\htdocs
+   git clone https://github.com/LedionImeri/LemboFix-.git lembofix
+   ```
+   (or download the ZIP from GitHub and extract it to `C:\xampp\htdocs\lembofix`).
 3. **Import the database**
    - Open <http://localhost/phpmyadmin> → **Import** → choose `database/schema.sql` → **Go**.
    - Or from a terminal: `mysql -u root < database/schema.sql`
@@ -175,15 +179,15 @@ Other seeded providers include Pro Electric, TechCare IT, CleanHome, AutoFix Gar
 
 ## 📸 Screenshots
 
-_Add your screenshots to `docs/screenshots/` and reference them here:_
+_Real screenshots of the running app with the seeded demo data._
 
 | Home | Search | Provider profile |
 |---|---|---|
-| ![Home](docs/screenshots/home.png) | ![Search](docs/screenshots/search.png) | ![Provider](docs/screenshots/provider.png) |
+| ![Home](docs/screenshots/home.jpg) | ![Search](docs/screenshots/search.jpg) | ![Provider](docs/screenshots/provider.jpg) |
 
 | Booking wizard | Provider dashboard | Admin dashboard |
 |---|---|---|
-| ![Booking](docs/screenshots/booking.png) | ![Provider dashboard](docs/screenshots/provider-dashboard.png) | ![Admin](docs/screenshots/admin.png) |
+| ![Booking](docs/screenshots/booking.jpg) | ![Provider dashboard](docs/screenshots/provider-dashboard.jpg) | ![Admin](docs/screenshots/admin.jpg) |
 
 ---
 

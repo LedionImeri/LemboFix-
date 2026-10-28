@@ -1,0 +1,14 @@
+# Uploaded files are data, never code
+Options -Indexes -ExecCGI
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+RemoveType .php .phtml .phar
+<FilesMatch "\.(?i:php\d?|phtml|phar|pl|py|cgi|sh|html?|svg|js)$">
+    Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'none'; sandbox"
+</IfModule>
